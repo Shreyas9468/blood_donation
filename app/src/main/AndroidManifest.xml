@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BloodDonation"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.Qdonar2"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Qdonar"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Donateform"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Benificiaries"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Requestblood"
+            android:exported="false"
+            android:label="@string/title_activity_requestblood" />
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.RegistrationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".Activities.MainActivity1"
+            android:exported="false"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

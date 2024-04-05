@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Donateform">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nextButton"
+        android:layout_marginTop="16dp"/>
+
+
+
+    <!-- Title "Donate" in red rectangle -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FF0000"
+        android:padding="16dp"
+        android:text="Donate Blood"
+        android:textColor="#151515"
+        android:textSize="24sp" />
+
+    <!-- Name Field -->
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18sp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="text"
+        android:background="@drawable/edit_text_background"/>
+
+    <!-- Line for Writing Name -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="-4dp"
+        android:background="@android:color/black" />
+
+    <!-- Address Field -->
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="18sp"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressLabel"
+        android:layout_marginStart="16dp"
+        android:layout_margin_end="16dp"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:background="@drawable/edit_text_background"/>
+
+    <!-- Line for Writing Address -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/addressEditText"
+        android:layout_marginTop="-4dp"
+        android:background="@android:color/black" />
+
+    <!-- Blood Group Field -->
+    <TextView
+        android:id="@+id/bloodGroupLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Group"
+        android:textSize="18sp"
+        android:layout_below="@id/addressEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Line for Writing Blood Group -->
+    <Spinner
+        android:id="@+id/bloodGroupSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bloodGroupLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/bloodGroupSpinner"
+        android:background="@android:color/black"/>
+
+    <!-- Blood Type Field -->
+    <TextView
+        android:id="@+id/bloodTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bloodGroupSpinner"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:text="Blood Type"
+        android:textSize="18sp" />
+
+    <!-- Line for Writing Blood Type -->
+    <Spinner
+        android:id="@+id/bloodTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bloodTypeLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/bloodTypeSpinner"
+        android:background="@android:color/black"/>
+
+    <!-- Age Field -->
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bloodTypeSpinner"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Age"
+        android:textSize="18sp" />
+
+    <!-- Line for Writing Age -->
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:inputType="number" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ageEditText"
+        android:background="@android:color/black"/>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F13636"
+        android:text="Next"
+        android:textColor="#040303"
+        android:translationX="90dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FB2C2C"
+        android:text="Back"
+        android:textColor="#0B0A0A"
+        android:translationX="30dp"
+        android:translationY="560dp" />
+
+</RelativeLayout>
+</ScrollView>

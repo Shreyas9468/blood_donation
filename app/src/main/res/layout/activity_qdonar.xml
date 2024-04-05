@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Qdonar">
+
+
+<!-- Title "Donate" in red rectangle -->
+
+<!-- List of questions with yes/no radio buttons -->
+<fragment
+    android:id="@+id/fragment_placeholder"
+    android:name="com.example.donateform.fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/questionsLayout" />
+
+<TextView
+    android:id="@+id/titleTextView"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#FF0000"
+    android:padding="16dp"
+    android:text="Donate Blood"
+    android:textColor="#121111"
+    android:textSize="24sp" />
+
+<LinearLayout
+    android:id="@+id/questionsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/titleTextView"
+    android:layout_marginTop="16dp"
+    android:padding="16dp">
+
+    <!-- Question 1 -->
+
+    <TextView
+        android:id="@+id/question1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you donated blood in the past 56 days (8 weeks)?"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/question1RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/yesRadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/noRadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Question 2 -->
+    <TextView
+        android:id="@+id/question2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you had any recent illness or infection?"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/question2RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/yesRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/noRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Question 3 -->
+    <TextView
+        android:id="@+id/question3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you currently feeling unwell or experiencing any symptoms such as fever, cough, sore throat, or flu-like symptoms?"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/question3RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/yesRadioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/noRadioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Question 4 -->
+    <TextView
+        android:id="@+id/question4TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you recently traveled to any areas with a risk of malaria or other infectious diseases?"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/question4RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/yesRadioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/noRadioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Question 5 -->
+    <TextView
+        android:id="@+id/question5TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you ever tested positive for HIV/AIDS or hepatitis?"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/question5RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/yesRadioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/noRadioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Question 6 -->
+    <TextView
+        android:id="@+id/question6TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you ever had cancer or undergone cancer treatment?"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/question6RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/yesRadioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/noRadioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Question 7 -->
+    <TextView
+        android:id="@+id/question7TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you ever had a heart attack or heart surgery?"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/question7RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/yesRadioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/noRadioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+
+
+    <!-- Add more questions similarly -->
+
+</LinearLayout>
+
+</RelativeLayout>

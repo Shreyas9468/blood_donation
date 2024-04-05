@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Requestblood"
+    android:padding="16dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="30dp"
+    android:text="Request for Blood"
+    android:textAlignment="center"
+    android:textColor="#D51010"
+    android:textColorLink="#EC0F0F"
+    android:textSize="24sp"
+    android:textStyle="bold" />
+
+<!-- Location Icon -->
+
+<!-- Call Icon -->
+
+<!-- Name Icon -->
+
+<!-- Name EditText -->
+
+<ImageView
+    android:id="@+id/imageView6"
+    android:layout_width="wrap_content"
+    android:layout_height="23dp"
+
+    android:adjustViewBounds="false"
+    android:rotationX="-15"
+    android:rotationY="4"
+    android:scaleType="centerInside"
+    android:translationX="270dp"
+    android:translationY="32dp"
+    app:srcCompat="@drawable/name" />
+
+<EditText
+    android:id="@+id/et_name"
+    android:layout_width="383dp"
+    android:layout_height="wrap_content"
+    android:hint="Your Name"
+    android:textSize="16sp" />
+
+<!-- Contact Icon -->
+
+<!-- Contact EditText -->
+
+<!-- Blood Group Spinner -->
+<ImageView
+    android:id="@+id/imageView8"
+    android:layout_width="388dp"
+    android:layout_height="25dp"
+    android:translationX="160dp"
+    android:translationY="30dp"
+    app:srcCompat="@drawable/call" />
+
+<!-- Required Dates Icon -->
+<EditText
+    android:id="@+id/et_contact"
+    android:layout_width="375dp"
+    android:layout_height="40dp"
+    android:hint="Your Contact Number"
+    android:inputType="phone"
+    android:textSize="16sp" />
+
+<Spinner
+    android:id="@+id/sp_blood_group"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:entries="@array/blood_group"
+    android:hint="Select Blood Group"
+    android:spinnerMode="dropdown" />
+
+<ImageView
+    android:id="@+id/imageView5"
+    android:layout_width="25dp"
+    android:layout_height="33dp"
+    android:outlineProvider="none"
+    android:translationX="340dp"
+    android:translationY="32dp"
+    app:srcCompat="@drawable/calender" />
+
+<!-- Required Dates EditText -->
+
+<!-- Units EditText -->
+<EditText
+    android:id="@+id/et_required_dates"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Required Dates"
+    android:textColor="#AB9898"
+    android:textSize="16sp"
+    tools:text="Required dates" />
+
+<EditText
+    android:id="@+id/et_units"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Quantity Required (in units)"
+    android:inputType="number"
+    android:textSize="16sp" />
+
+<!-- Address EditText -->
+
+<!-- Age Spinner -->
+
+<EditText
+    android:id="@+id/et_address"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Your Address"
+    android:textSize="16sp" />
+
+<ImageView
+    android:id="@+id/imageView9"
+    android:layout_width="40dp"
+    android:layout_height="26dp"
+    android:translationX="330dp"
+    android:translationY="-35dp"
+    app:srcCompat="@drawable/location" />
+
+<Spinner
+    android:id="@+id/sp_age"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:entries="@array/age_options"
+
+    />
+
+<!-- Gender Spinner -->
+<Spinner
+    android:id="@+id/sp_gender"
+    android:layout_width="380dp"
+    android:layout_height="40dp"
+    android:entries="@array/gender_options"
+    />
+
+<!-- Reason Spinner -->
+<Spinner
+    android:id="@+id/sp_reason"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:entries="@array/reason_for_requirement"
+    />
+
+<!-- Submit Button -->
+<Button
+    android:id="@+id/btnSubmit"
+    android:layout_width="199dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="87dp"
+    android:layout_marginTop="40dp"
+    android:backgroundTint="#F12E2E"
+    android:rotationX="-15"
+    android:text="Submit Request"
+    android:textColor="#090808"
+    android:textSize="20sp"
+    android:textStyle="normal" />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Benificiaries"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_red_dark"
+    android:padding="8dp"
+    android:text="Benificeries:"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+    android:textColor="@color/black"
+    android:textSize="32sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="1. Blood donation saves lives."
+    android:textSize="16sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="2. It promotes cardiovascular health."
+    android:textSize="16sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+<TextView
+    android:id="@+id/textView5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="3. Donors contribute to community well-being."
+    android:textSize="16sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+<TextView
+    android:id="@+id/textView6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="4. Screening detects health issues early."
+    android:textSize="16sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+<TextView
+    android:id="@+id/textView7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="5. Replenishes blood supply in emergencies."
+    android:textSize="16sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+<TextView
+    android:id="@+id/textView8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="6. Donating is safe and straightforward."
+    android:textSize="16sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+<TextView
+    android:id="@+id/textView9"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="7. Improves blood flow and circulation."
+    android:textSize="16sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+<TextView
+    android:id="@+id/textView10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="8. Reduces the risk of heart disease."
+    android:textSize="16sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+<TextView
+    android:id="@+id/textView11"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="9. Fosters a sense of altruism."
+    android:textSize="16sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+<TextView
+    android:id="@+id/textView12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="10. Environmentally friendly practice."
+    android:textSize="16sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+</LinearLayout>

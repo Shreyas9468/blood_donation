@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Qdonar2">
+
+
+<!-- Question 1 -->
+<TextView
+    android:id="@+id/question1TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Have you ever had a blood transfusion or received any blood products?"
+    android:textSize="16sp" />
+
+<RadioGroup
+    android:id="@+id/question1RadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question1TextView"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/yesRadioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+
+    <RadioButton
+        android:id="@+id/noRadioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No" />
+</RadioGroup>
+
+<!-- Question 2 -->
+<TextView
+    android:id="@+id/question2TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question1RadioGroup"
+    android:text="Are you currently taking any medications or supplements?"
+    android:textSize="16sp" />
+
+<RadioGroup
+    android:id="@+id/question2RadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question2TextView"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/yesRadioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+
+    <RadioButton
+        android:id="@+id/noRadioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No" />
+
+</RadioGroup>
+
+<!-- Question 3 -->
+<TextView
+    android:id="@+id/question3TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question2RadioGroup"
+    android:text="Have you ever injected drugs or used non-prescription needles?"
+    android:textSize="16sp" />
+
+<RadioGroup
+    android:id="@+id/question3RadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question3TextView"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/yesRadioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+
+    <RadioButton
+        android:id="@+id/noRadioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No" />
+</RadioGroup>
+
+<!-- Question 4 -->
+<TextView
+    android:id="@+id/question4TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question3RadioGroup"
+    android:text="Have you ever had a positive test for syphilis, gonorrhea, or any other sexually transmitted infection?"
+    android:textSize="16sp" />
+
+<RadioGroup
+    android:id="@+id/question4RadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question4TextView"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/yesRadioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+
+    <RadioButton
+        android:id="@+id/noRadioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No" />
+
+</RadioGroup>
+
+<!-- Question 5 -->
+<TextView
+    android:id="@+id/question5TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question4RadioGroup"
+    android:text="Have you ever been diagnosed with Creutzfeldt-Jakob Disease (CJD) or been in close contact with someone who has CJD?"
+    android:textSize="16sp" />
+
+<RadioGroup
+    android:id="@+id/question5RadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question5TextView"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/yesRadioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+
+    <RadioButton
+        android:id="@+id/noRadioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No" />
+</RadioGroup>
+
+<!-- Question 6 -->
+<TextView
+    android:id="@+id/question6TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question5RadioGroup"
+    android:text="Have you ever had a positive test for Chagas disease?"
+    android:textSize="16sp" />
+
+<RadioGroup
+    android:id="@+id/question6RadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question6TextView"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/yesRadioButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+
+    <RadioButton
+        android:id="@+id/noRadioButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No" />
+</RadioGroup>
+
+<TextView
+    android:id="@+id/question7TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question6RadioGroup"
+    android:text="Have you ever had a positive test for Chagas diseases?"
+    android:textSize="16sp" />
+
+<RadioGroup
+    android:id="@+id/question7RadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question7TextView"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/yesRadioButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+
+    <RadioButton
+        android:id="@+id/noRadioButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No" />
+</RadioGroup>
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/question3RadioGroup"
+    android:layout_marginBottom="-457dp"
+    android:backgroundTint="#F63030"
+    android:text="Submit"
+    android:textColor="#0B0A0A"
+    android:textColorHighlight="#0B0A0A"
+    android:textColorHint="#070707"
+    android:translationX="150dp" />
+
+</RelativeLayout>
